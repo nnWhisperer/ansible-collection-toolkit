@@ -1,0 +1,6 @@
+patterns:
+  - files:
+      - from: roles/unattended_upgrades
+        to: ./
+    repositories:
+      - nnWhisperer/ansible-collection-toolkit@unattended
