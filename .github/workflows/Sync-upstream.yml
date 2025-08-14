@@ -38,6 +38,7 @@ jobs:
       with:
         target_sync_branch: my-branch
         # REQUIRED 'target_repo_token' exactly like this!
+        upstream_pull_args: '--allow-unrelated-histories'
         target_repo_token: ${{ secrets.TARGET_TOKEN }}
         upstream_sync_branch: main
         upstream_sync_repo: hifis-net/ansible-collection-toolkit
