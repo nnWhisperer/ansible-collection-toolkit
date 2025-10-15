@@ -1,5 +1,93 @@
 # Changelog
 
+## [v6.2.2](https://github.com/hifis-net/ansible-collection-toolkit/tree/v6.2.2) (2025-09-18)
+
+[Full Changelog](https://github.com/hifis-net/ansible-collection-toolkit/compare/v6.2.1...v6.2.2)
+
+**Fixed bugs:**
+
+- gitlab\_runner: user\_data template issue with Ansible 2.19 [\#493](https://github.com/hifis-net/ansible-collection-toolkit/issues/493)
+
+**Merged pull requests:**
+
+- Fix user\_data template JSON encoding [\#496](https://github.com/hifis-net/ansible-collection-toolkit/pull/496) [[gitlab_runner](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab_runner)] ([tobiashuste](https://github.com/tobiashuste))
+- gitlab\_runner: add option to hide sensitive changes in diffs [\#492](https://github.com/hifis-net/ansible-collection-toolkit/pull/492) [[gitlab_runner](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab_runner)] ([Normo](https://github.com/Normo))
+- Bump actions/labeler from 5.0.0 to 6.0.1 [\#487](https://github.com/hifis-net/ansible-collection-toolkit/pull/487) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v6.2.1](https://github.com/hifis-net/ansible-collection-toolkit/tree/v6.2.1) (2025-09-03)
+
+[Full Changelog](https://github.com/hifis-net/ansible-collection-toolkit/compare/v6.2.0...v6.2.1)
+
+**Implemented enhancements:**
+
+- Ensure stable order in gitlab\_rails monitoring\_whitelist [\#482](https://github.com/hifis-net/ansible-collection-toolkit/pull/482) [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([Normo](https://github.com/Normo))
+
+**Merged pull requests:**
+
+- Prepare release of version 6.2.1 [\#483](https://github.com/hifis-net/ansible-collection-toolkit/pull/483) ([Normo](https://github.com/Normo))
+- Bump ansible-lint from 25.8.1 to 25.8.2 [\#481](https://github.com/hifis-net/ansible-collection-toolkit/pull/481) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible/ansible-lint from 25.8.1 to 25.8.2 [\#480](https://github.com/hifis-net/ansible-collection-toolkit/pull/480) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v6.2.0](https://github.com/hifis-net/ansible-collection-toolkit/tree/v6.2.0) (2025-08-22)
+
+[Full Changelog](https://github.com/hifis-net/ansible-collection-toolkit/compare/v6.1.1...v6.2.0)
+
+**Implemented enhancements:**
+
+- Make monitoring whitelist variable configurable [\#467](https://github.com/hifis-net/ansible-collection-toolkit/pull/467) [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([tobiashuste](https://github.com/tobiashuste))
+- Ansible 2.19 compatibility [\#464](https://github.com/hifis-net/ansible-collection-toolkit/pull/464) [[netplan](https://github.com/hifis-net/ansible-collection-toolkit/labels/netplan)] [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([tobiashuste](https://github.com/tobiashuste))
+
+**Merged pull requests:**
+
+- Prepare release of version 6.2.0 [\#478](https://github.com/hifis-net/ansible-collection-toolkit/pull/478) ([tobiashuste](https://github.com/tobiashuste))
+- zammad role: prefix all internal variables with two underscores [\#477](https://github.com/hifis-net/ansible-collection-toolkit/pull/477) [[zammad](https://github.com/hifis-net/ansible-collection-toolkit/labels/zammad)] ([Normo](https://github.com/Normo))
+- unattended\_upgrades role: prefix all internal variables with '\_\_' [\#476](https://github.com/hifis-net/ansible-collection-toolkit/pull/476) [[unattended_upgrades](https://github.com/hifis-net/ansible-collection-toolkit/labels/unattended_upgrades)] ([Normo](https://github.com/Normo))
+- redis role: prefix all internal variables with '\_\_' [\#475](https://github.com/hifis-net/ansible-collection-toolkit/pull/475) [[redis](https://github.com/hifis-net/ansible-collection-toolkit/labels/redis)] ([Normo](https://github.com/Normo))
+- netplan role: prefix all internal variables with '\_\_' [\#474](https://github.com/hifis-net/ansible-collection-toolkit/pull/474) [[netplan](https://github.com/hifis-net/ansible-collection-toolkit/labels/netplan)] ([Normo](https://github.com/Normo))
+- Consistently access facts via the ansible\_facts.\* namespace [\#473](https://github.com/hifis-net/ansible-collection-toolkit/pull/473) [[unattended_upgrades](https://github.com/hifis-net/ansible-collection-toolkit/labels/unattended_upgrades)] [[zammad](https://github.com/hifis-net/ansible-collection-toolkit/labels/zammad)] [[ssh_keys](https://github.com/hifis-net/ansible-collection-toolkit/labels/ssh_keys)] [[gitlab_runner](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab_runner)] [[keepalived](https://github.com/hifis-net/ansible-collection-toolkit/labels/keepalived)] [[haproxy](https://github.com/hifis-net/ansible-collection-toolkit/labels/haproxy)] [[netplan](https://github.com/hifis-net/ansible-collection-toolkit/labels/netplan)] [[redis](https://github.com/hifis-net/ansible-collection-toolkit/labels/redis)] [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([Normo](https://github.com/Normo))
+- Use validate parameter to check Keepalived config file [\#472](https://github.com/hifis-net/ansible-collection-toolkit/pull/472) [[keepalived](https://github.com/hifis-net/ansible-collection-toolkit/labels/keepalived)] ([Normo](https://github.com/Normo))
+- Mark tempdir\_fleeting\_plugin as internal variable [\#471](https://github.com/hifis-net/ansible-collection-toolkit/pull/471) [[gitlab_runner](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab_runner)] ([Normo](https://github.com/Normo))
+- keepalived role: prefix all internal variables with '\_\_' [\#470](https://github.com/hifis-net/ansible-collection-toolkit/pull/470) [[keepalived](https://github.com/hifis-net/ansible-collection-toolkit/labels/keepalived)] ([Normo](https://github.com/Normo))
+- Use validate parameter to check HAProxy config file instead of handler task [\#469](https://github.com/hifis-net/ansible-collection-toolkit/pull/469) [[haproxy](https://github.com/hifis-net/ansible-collection-toolkit/labels/haproxy)] ([Normo](https://github.com/Normo))
+- haproxy role: prefix all internal variables with '\_\_' [\#468](https://github.com/hifis-net/ansible-collection-toolkit/pull/468) [[haproxy](https://github.com/hifis-net/ansible-collection-toolkit/labels/haproxy)] ([Normo](https://github.com/Normo))
+- GitLab-runner role: prefix all internal variables with '\_\_' [\#466](https://github.com/hifis-net/ansible-collection-toolkit/pull/466) [[gitlab_runner](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab_runner)] ([Normo](https://github.com/Normo))
+- GitLab role: Prefix all internal variables with '\_\_' [\#465](https://github.com/hifis-net/ansible-collection-toolkit/pull/465) [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([Normo](https://github.com/Normo))
+- Bump ansible/ansible-lint from 25.7.0 to 25.8.1 [\#462](https://github.com/hifis-net/ansible-collection-toolkit/pull/462) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v6.1.1](https://github.com/hifis-net/ansible-collection-toolkit/tree/v6.1.1) (2025-08-13)
+
+[Full Changelog](https://github.com/hifis-net/ansible-collection-toolkit/compare/v6.1.0...v6.1.1)
+
+**Fixed bugs:**
+
+- Fix registry db migrations not executed upon gitlab upgrades [\#459](https://github.com/hifis-net/ansible-collection-toolkit/pull/459) [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([tobiashuste](https://github.com/tobiashuste))
+
+**Merged pull requests:**
+
+- Prepare release v6.1.1 [\#461](https://github.com/hifis-net/ansible-collection-toolkit/pull/461) ([tobiashuste](https://github.com/tobiashuste))
+- Bump ansible from 11.8.0 to 11.9.0 [\#460](https://github.com/hifis-net/ansible-collection-toolkit/pull/460) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 5 [\#458](https://github.com/hifis-net/ansible-collection-toolkit/pull/458) [[unattended_upgrades](https://github.com/hifis-net/ansible-collection-toolkit/labels/unattended_upgrades)] [[zammad](https://github.com/hifis-net/ansible-collection-toolkit/labels/zammad)] [[ssh_keys](https://github.com/hifis-net/ansible-collection-toolkit/labels/ssh_keys)] [[gitlab_runner](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab_runner)] [[keepalived](https://github.com/hifis-net/ansible-collection-toolkit/labels/keepalived)] [[haproxy](https://github.com/hifis-net/ansible-collection-toolkit/labels/haproxy)] [[netplan](https://github.com/hifis-net/ansible-collection-toolkit/labels/netplan)] [[redis](https://github.com/hifis-net/ansible-collection-toolkit/labels/redis)] [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v6.1.0](https://github.com/hifis-net/ansible-collection-toolkit/tree/v6.1.0) (2025-08-12)
+
+[Full Changelog](https://github.com/hifis-net/ansible-collection-toolkit/compare/v6.0.1...v6.1.0)
+
+**Implemented enhancements:**
+
+- Make sure to run registry metadata database migrations [\#455](https://github.com/hifis-net/ansible-collection-toolkit/pull/455) [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([Normo](https://github.com/Normo))
+- Add AlmaLinux OS 9 support for GitLab role [\#440](https://github.com/hifis-net/ansible-collection-toolkit/pull/440) [[gitlab](https://github.com/hifis-net/ansible-collection-toolkit/labels/gitlab)] ([Normo](https://github.com/Normo))
+
+**Merged pull requests:**
+
+- Prepare release 6.1.0 [\#456](https://github.com/hifis-net/ansible-collection-toolkit/pull/456) ([tobiashuste](https://github.com/tobiashuste))
+- Bump yamllint from 1.35.1 to 1.37.1 [\#453](https://github.com/hifis-net/ansible-collection-toolkit/pull/453) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump molecule from 25.3.1 to 25.7.0 [\#452](https://github.com/hifis-net/ansible-collection-toolkit/pull/452) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible-lint from 25.1.3 to 25.7.0 [\#451](https://github.com/hifis-net/ansible-collection-toolkit/pull/451) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Fix condition for compatibility with Ansible 2.19 [\#449](https://github.com/hifis-net/ansible-collection-toolkit/pull/449) [[ssh_keys](https://github.com/hifis-net/ansible-collection-toolkit/labels/ssh_keys)] ([tobiashuste](https://github.com/tobiashuste))
+- Fix conditionals for Ansible 2.19 [\#448](https://github.com/hifis-net/ansible-collection-toolkit/pull/448) [[unattended_upgrades](https://github.com/hifis-net/ansible-collection-toolkit/labels/unattended_upgrades)] ([sur5r](https://github.com/sur5r))
+- Bump ansible/ansible-lint from 25.6.0 to 25.7.0 [\#447](https://github.com/hifis-net/ansible-collection-toolkit/pull/447) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible from 11.7.0 to 11.8.0 [\#446](https://github.com/hifis-net/ansible-collection-toolkit/pull/446) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v6.0.1](https://github.com/hifis-net/ansible-collection-toolkit/tree/v6.0.1) (2025-06-19)
 
 [Full Changelog](https://github.com/hifis-net/ansible-collection-toolkit/compare/v6.0.0...v6.0.1)
